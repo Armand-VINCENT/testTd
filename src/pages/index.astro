@@ -3,6 +3,77 @@ import BasicLayout from "../layouts/BasicLayout.astro";
 ---
 
 <BasicLayout title="Home">
-  <h1 class="bg-primary/40 text-[2rem] font-bold">Hello MMI 🚀</h1>
-  <p>Créative Coding.</p>
+  <div class="home text-secondary p-2">
+    <section
+      class="home__start decoration-grey-500 flex flex-col gap-4 border-1 border-gray-700 p-1"
+    >
+      <h1 class="decoration-tertiary text-2xl font-bold underline decoration-4">
+        Hi, I'm Paulina 👋
+      </h1>
+      <p class="text-gray-500">
+        Astro is a modern static site generator optimized websites with ease. It
+        leverages the power of JavaScript frameworks like React, Vue, and
+        Svelte, while keeping the final output minimal and efficient. Whether
+        you're building a blog, portfolio, or e-commerce site, Astro provides
+        the flexibility.
+      </p>
+      <p class="text-gray-500">
+        Discover the power of Astro, a modern static site generator that
+        combines the best of JavaScript frameworks with minimal, optimized
+        output for exceptional performance and flexibility.
+      </p>
+      <ul class="home__start--icon flex gap-4">
+        <li class="icon rounded border-1 border-gray-700 p-2">
+          <img src="/src/assets/logo-github.svg" alt="" />
+        </li>
+        <li class="icon rounded border-1 border-gray-700 p-2">
+          <img src="/src/assets/logo-linkedin.svg" alt="" />
+        </li>
+        <li class="icon rounded border-1 border-gray-700 p-2">
+          <img src="/src/assets/logo-github.svg" alt="" />
+        </li>
+      </ul>
+    </section>
+
+    <section
+      class="home__article decoration-grey-500 flex flex-col gap-2 border-1 border-gray-700 p-1"
+    >
+      <h1 class="mt-2 text-2xl font-bold">Latest Articles</h1>
+
+      <ul class="article__container flex flex-col gap-4">
+        <li class="article">
+          <h2 class="article__title">
+            Balancing Hobbies and Coding : How Hiking and Rock Climbing Help Me
+            Stay Motivated
+          </h2>
+          <p class="article__date text-gray-500">February 18, 2025</p>
+        </li>
+        <li class="article">
+          <h2 class="article__title">
+            Reading for Inspiration : 5 Books That Shaped My Coding Journey
+          </h2>
+          <p class="article__date text-gray-500">February 15, 2025</p>
+        </li>
+        <li class="article">
+          <h2 class="article__title">
+            Overcomming Imposter Syndrome as a New Developer
+          </h2>
+          <p class="article__date text-gray-500">February 10, 2025</p>
+        </li>
+        <li class="article">
+          <h2 class="article__title">
+            Exploring the World of Responsive Design
+          </h2>
+          <p class="article__date text-gray-500">February 4, 2025</p>
+        </li>
+        <li class="article">
+          <h2 class="article__title">My Favorite Dev Tools for Productivity</h2>
+          <p class="article__date text-gray-500">January 29,2025</p>
+        </li>
+      </ul>
+      <a href="" class="decoration-tertiary font-bold underline decoration-2"
+        >View all articles</a
+      >
+    </section>
+  </div>
 </BasicLayout>
